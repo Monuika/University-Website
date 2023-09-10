@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <section class="subheader">
+        <nav>
+            <div class="name">
+                <img src="logo.jpg" id="logo">
+                <p id="logotext">Sakalya University</p>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="facilities.html">FACILITIES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    <section class="facilitiessec">
+        <h1>Our Facilities</h1>
+        <p>***hover on the images  for more info***</p>
+        <div class="row1">
+     <div class="fac-col libflip">
+        <div class="lib-inner">
+            <div class="lib-front">
+                <img src="library.jpg">
+            </div>
+             <div class="lib-back">
+                <h1>LIBRARY</h1>
+                <P>Collection of variety of highly intelligible Books with in depth knowledge</P>
+            </div>
+        </div>
+     </div>
+     <div class="fac-col hosflip" >
+        <div class="hos-inner">
+            <div class="hos-front">
+                <img src="hostel.jpg">
+            </div>
+            <div class="hos-back">
+                <h1>Hostel</h1>
+                <P>Clean and home like hostels with proper supervision around the clock</P>
+            </div>
+        </div>
+     </div>
+     <div class="fac-col labflip">
+        <div class="lab-inner">
+            <div class="lib-front">
+                <img src="labs.jpg">
+            </div>
+             <div class="lab-back">
+                <h1>LABS</h1>
+                <P>Sophisticated and seamless lab evironments with convinient infrastructure</P>
+            </div>
+        </div>
+     </div>
+    </div>
+    <div class="row2">
+        <div class="fac-col spflip">
+            <div class="sp-inner">
+                <div class="sp-front">
+                    <img src="sports.png">
+                </div>
+                 <div class="sp-back">
+                    <h1>SPORTS</h1>
+                    <P>Large playground and sports area to keep up your physical and mental fitness as well</P>
+                </div>
+            </div>
+         </div>
+         <div class="fac-col cflip">
+            <div class="c-inner">
+                <div class="c-front">
+                    <img src="counselling.webp">
+                </div>
+                 <div class="c-back">
+                    <h1>counselling</h1>
+                    <P>Experienced Counsellers to guide students for their best careers</P>
+                </div>
+            </div>
+         </div>
+         <div class="fac-col dflip">
+            <div class="d-inner">
+                <div class="d-front">
+                    <img src="disabilityfacility.jpg">
+                </div>
+                 <div class="d-back">
+                    <h1>Disability Support</h1>
+                    <P>Special arrangements and equipments for disabled students </P>
+                </div>
+            </div>
+         </div>
+    </div>
+    </div>
+    </section>
+
+    <!-------contact----------->
+    <section class="footer">
+        <h1>Contact Us</h1>
+        <p>You can rech out to us through below social media</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </section>
+
+    <script>
+        var navLinks=document.getElementById("nav-links");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+        
+    </script>
+</body>
+</html>
